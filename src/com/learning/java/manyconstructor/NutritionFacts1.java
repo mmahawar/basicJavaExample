@@ -1,6 +1,7 @@
 package com.learning.java.manyconstructor;
 
 // Telescoping constructor pattern - does not scale well!
+@SuppressWarnings("unused")
 public class NutritionFacts1 {
 	private final int servingSize;
 	private final int servings;

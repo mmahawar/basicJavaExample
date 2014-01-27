@@ -1,6 +1,7 @@
 package com.learning.java.generics;
 
 //Higher Bound
+@SuppressWarnings("unused")
 public class GenericPoints<X extends Number, Y extends Number> {
 
 	private X xCoord;
@@ -22,16 +23,20 @@ public class GenericPoints<X extends Number, Y extends Number> {
 		this.yCoord = yCoord;
 	}
 
-	public GenericPoints(X x , Y y) {
+	public GenericPoints(X x, Y y) {
 		xCoord = x;
 		yCoord = y;
 	}
-	
+
 	public static void main(String[] args) {
-		GenericPoints<Integer, Float> genericPoints = new GenericPoints<>(1, 12.3F);
-		GenericPoints<Integer, Integer> genericPoint1 = new GenericPoints<>(1, 1);
-		GenericPoints<Double, Integer> genericPoint2 = new GenericPoints<>(1.2d, 1);
-		
-		//GenericPoints<Double, String> genericPoint3 = new GenericPoints<>(1.2d, "");
+		GenericPoints<Integer, Float> genericPoints = new GenericPoints<>(1,
+				12.3F);
+		GenericPoints<Integer, Integer> genericPoint1 = new GenericPoints<>(1,
+				1);
+		GenericPoints<Double, Integer> genericPoint2 = new GenericPoints<>(
+				1.2d, 1);
+
+		// GenericPoints<Double, String> genericPoint3 = new
+		// GenericPoints<>(1.2d, "");
 	}
 }
